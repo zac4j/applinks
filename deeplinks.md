@@ -34,9 +34,13 @@ http://blog.csdn.net/songchunmin_/article/details/52279319
 应用宝 AppLink 接入：
 http://wiki.open.qq.com/index.php?title=AppLink%E6%8E%A5%E5%85%A5
 
+Google AppLinks:
 https://developer.android.google.cn/training/app-links/
 
-微信内跳转 App
+Deep Linking Through a Multiple Activity Stack on Android:
+http://labs.comcast.com/deep-linking-through-a-multiple-activity-stack-on-android
+
+## 微信内跳转 App
 调研结果：微信内屏蔽了 URL Scheme，基于 URL Scheme 的安卓系统深度链接技术，如 AppLinks、Deep Linking 都无法生效（微信与 AppStore 有合作，未屏蔽 iOS 的 Universal links），为了在安卓系统内实现微信跳转 App 指定页的功能，可以有两种途径：
 + 让微信将 App 添加至白名单
 + 使用微信推荐的——应用宝微下载服务
@@ -47,8 +51,7 @@ https://developer.android.google.cn/training/app-links/
 + 所在的容器：应用内浏览器，系统及第三方浏览器
 + 需要的技术：Deep Linking，App Links，应用宝 AppLink
 
-
-## deep links
+## Deep Links
 #### How to drive users to the right activity?
 + Add intent-filters
 + Extra data from incoming intent
